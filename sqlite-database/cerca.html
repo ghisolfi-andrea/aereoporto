@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerca Voli</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cerca Voli</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="voli.html">Visualizza Voli</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Ricerca Voli</h2>
+        <form id="search-form">
+            <label for="direction">Direzione:</label>
+            <select id="direction" name="direction">
+                <option value="andata">Malpensa → New York</option>
+                <option value="ritorno">New York → Malpensa</option>
+            </select>
+            <br><br>
+            <label for="compagnia">Compagnia:</label>
+            <input type="text" id="compagnia" name="compagnia" placeholder="Es. Alitalia">
+            <br><br>
+            <button type="submit">Cerca</button>
+        </form>
+        <h3>Risultati della ricerca:</h3>
+        <ul id="search-results">
+            <!-- I risultati della ricerca saranno aggiunti dinamicamente -->
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2025 Gestione Voli. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
